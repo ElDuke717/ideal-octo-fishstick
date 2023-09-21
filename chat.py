@@ -17,14 +17,25 @@ HEADERS = {
     "Content-Type": "application/json"
 }
 
-user_prompt = input("What would you like to ask gpt-3.5-turbo?")
+user_prompt = input("What would you like to ask gpt-3.5-turbo? ")
 
 
 def chat_with_gpt():
+    # Declare default settings
+    default_temperature = 0.7
+
+    # Use the defaults or get user-defined settings
+    temperature = float(
+        input("Enter temperature (default 0.7): ") or default_temperature)
+
     payload = {
         "model": "gpt-3.5-turbo",
-        "messages": [{"role": "system", "content": "Thanks for helping."},
-                     {"role": "user", "content": f'{user_prompt}'}]}
+        "temperature": temperature,  # Add temperature parameter
+        "messages": [
+            {"role": "system", "content": "Thanks for helping."},
+            {"role": "user", "content": f'{user_prompt}'}
+        ]
+    }
 
     while True:
         response = requests.post(API_ENDPOINT, headers=HEADERS, json=payload)

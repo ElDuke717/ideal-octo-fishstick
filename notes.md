@@ -16,7 +16,7 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 # Course Notes
 
 ## Table of Contents
-  
+
 [Basics of Prompting](#basics-of-prompting)
 
 [Iterative Refinement](#iterative-refinement)
@@ -25,21 +25,109 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 
 [Transforming with ChatGPT](#transforming-with-chatgpt)
 
-[Expanding with ChatGPT](##expanding-with-chatgpt) 
+[Expanding with ChatGPT](##expanding-with-chatgpt)
 
 [Formatting Output with ChatGPT](#formatting-output-with-chatgpt)
 
 [Best Practices for Prompting](#best-practices-for-prompting)
 
-  
 ## Basics of Prompting
 
-  
+## Introduction
+
+### Summary: LLMs & Why ChatGPT Stands Out
+
+#### Key Points:
+
+1. **What are LLMs?**
+   - Large Language Models (LLMs) are a critical development in Natural Language Processing (NLP).
+2. **ChatGPT's Rapid Growth**
+
+   - Gained 100 million users in just over two months after its launch, outpacing TikTok and Instagram.
+   - Attracts significant investment, including $10 billion from Microsoft.
+
+3. **Other Notable LLMs**
+
+   - OpenAI GPT-3: Known for human-like text and diverse tasks.
+   - BERT: Excel in context understanding and text classification.
+   - RoBERTa: An optimized version of BERT with improved performance.
+   - PaLM 2: Combines multiple models for reliable results.
+
+4. **ChatGPT vs. Other LLMs**
+
+   - Investors were disappointed with Alphabet's Bard, showing the market's high expectations around ChatGPT.
+
+5. **Strengths and Weaknesses**
+
+   - GPT-3: Highly accurate but needs substantial computational resources.
+   - BERT: Struggles with out-of-context queries.
+   - RoBERTa: Computationally intensive.
+   - PaLM 2: Needs more resources due to multiple model combination.
+
+6. **Applications**
+
+   - GPT-3: Language translation, virtual assistants.
+   - BERT: Search engines, sentiment analysis.
+   - RoBERTa: Text classification, machine translation.
+   - PaLM 2: Text analysis, sentiment analysis.
+
+7. **Why ChatGPT?**
+   - **General-purpose**: Can handle various NLP tasks.
+   - **High Accuracy**: Trained on diverse data sources.
+   - **Ease of Use**: Requires fewer resources than others.
+   - **Conversational Proficiency**: Fine-tuned for high-quality responses.
+
+#### Highlights:
+
+- ChatGPT is a major player, showing unprecedented growth and investment interest.
+- Various LLMs have different strengths, weaknesses, and application areas.
+- ChatGPT is preferred for its versatility, accuracy, and lower resource requirements.
+
 #### Main Points:
 
 - Importance of well-structured prompts
 - Components of a good prompt: Instructions, Context, Input Data, Output Indicators
 - Guidelines for formatting prompts
+
+## ChatGPT Under The Hood
+### ChatGPT: Under the Hood - Summary
+
+#### Overview
+- Focuses on the features, architecture, and training data of ChatGPT.
+- Developed by OpenAI for generating human-like text responses.
+
+#### ChatGPT Model
+- Built on GPT-3 architecture, uses autoregressive language modeling.
+- Contextualizes input text to generate appropriate text-based responses.
+
+#### Response Mechanism
+- Input is verified for safety and ethical guidelines.
+- Breaks down input into tokens, predicts the next word, and forms a full response.
+- Can be fine-tuned for domain-specific needs like language translation.
+
+#### Training Data
+- Trained on a diverse dataset including books, articles, and online forums.
+- Uses over 45 terabytes of text from various genres, languages, and time periods.
+
+#### Key Features
+- **Versatility**: Useful for multiple NLP tasks, can be fine-tuned.
+- **Accuracy**: High performance in several NLP benchmarks.
+- **Human-like Responses**: Ideal for chatbot development.
+- **Large Model Size**: Over 6 billion parameters, enhances context understanding.
+
+#### ChatGPT 3.5 vs. ChatGPT 4.0
+- **ChatGPT 3.5 Turbo**: Faster, more efficient, ideal for real-time responses.
+- **ChatGPT 4**: Better at long-form text, improved accuracy, and naturalness.
+
+#### Takeaways
+- Highly versatile and accurate, ideal for various NLP applications including chatbots.
+- Specific version choice should be based on project requirements.
+
+---
+
+Feel free to refer back to these notes as you dive deeper into NLP or consider building a chatbot, Nick!1
+
+
 #### Instructions:
 
 - Be explicit and clear about what you want the model to do.
@@ -54,6 +142,7 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 - Include details that might influence the model's understanding.
 
 **Example**: When asking for directions in a foreign country, specify that context so the model knows to translate into the appropriate language.
+
 #### Input Data:
 
 - Use examples or references related to the task.
@@ -80,10 +169,10 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 By carefully crafting your prompts, you'll get more accurate and contextually appropriate responses from ChatGPT.
 
 ## Iterative Refinement
- 
 
 Iterative refinement is the practice of progressively improving and adjusting prompts to obtain more accurate and tailored responses from ChatGPT. The process involves modifying instructions, context, or constraints to guide the model better.
-#### Benefits 
+
+#### Benefits
 
 1. Allows for more specific, detailed instructions, leading to precise outputs.
 
@@ -106,13 +195,12 @@ Iterative refinement is the practice of progressively improving and adjusting pr
 #### Workflow
 
 The iterative refining workflow is a cyclical process involving testing, evaluation, and prompt adjustments to gradually hone the model's responses.
+
 #### Example
 
 The example provided showcases how a basic travel recommendation prompt can be refined over three iterations to offer increasingly personalized travel suggestions. Each refinement incorporates more specific details like the type of vacation, couple’s interests, timing, and weather preferences, resulting in a highly tailored recommendation.
 
 In essence, iterative refinement helps users tap into the full potential of ChatGPT by continually improving the prompts, enabling more accurate and contextually relevant outputs.
-
-  
 
 ## Inferring with ChatGPT
 
@@ -123,16 +211,19 @@ Sure thing, Nick! Here's a summarized outline of the page about "Inferring with 
 ### Summary: Inferring with ChatGPT
 
 - Overview of how ChatGPT uses inference to understand implicit information and generate personalized responses.
-  
+
 #### Inference
+
 - Definition: Deduction of unstated information based on context and background knowledge.
-  
+
 #### Benefits of Inferring
+
 - Grasps the context for better, more relevant responses.
 - Resolves ambiguities and clarifies vague queries.
 - Bridges information gaps for a smooth conversation.
-  
+
 #### Use Cases of Inference
+
 - Enhances responses with conversation history and contextual cues.
 - Understands user intents when details are missing.
 - Provides tailored suggestions.
@@ -140,43 +231,54 @@ Sure thing, Nick! Here's a summarized outline of the page about "Inferring with 
 - Clarifies and resolves uncertainties.
 
 #### Examples
+
 1. **What time is the movie?**
+
    - Inference: Refers to a movie being discussed or relevant to the current context.
-  
+
 2. **Can you recommend a good restaurant nearby?**
+
    - Inference: Based on the user's current location or context.
 
 3. **How long does it take to fly from New York to London?**
    - Inference: Duration of a non-stop flight, assuming no delays.
 
 4A. **Height Comparisons (John, Bob, Andrew, Sid)**
-   - Inference: John is the tallest.
+
+- Inference: John is the tallest.
 
 4B. **Is Andrew taller than John?**
-   - Inference: John is tallest, so Andrew can't be taller.
+
+- Inference: John is tallest, so Andrew can't be taller.
 
 #### Strategies for Leveraging Inferring
+
 - **Context Awareness**: Provide context to help ChatGPT make better inferences.
 - **Clarity in Prompts**: Create prompts that give clear cues for better inference.
 - **Test and Iterate**: Evaluate and refine ChatGPT responses to improve accuracy.
-  
+
 #### Conclusion
+
 - Understanding and utilizing inference in ChatGPT enables richer and more meaningful interactions.
 
 ---
 
 You can use this summary as a quick reference for understanding how ChatGPT uses inference to better interact with users.
+
 ## Transforming with ChatGPT
 
 #### What is Transforming?
+
 - Transforming in ChatGPT means rewriting text, reframing ideas, summarizing information, translating languages, and generating new content.
 - It enables the user to tailor ChatGPT's responses to suit specific contexts and audiences, thereby enhancing its versatility.
 
 #### Significance:
+
 - Allows users to explore different perspectives and generate unique text variations.
 - Adapts responses to suit different contexts, audience types, or formatting requirements.
 
 #### Applications and Examples:
+
 1. **Text Rewriting**: ChatGPT can rewrite an email from casual to formal tone.
 2. **Idea Reframing**: It can provide different article title variations for the topic "The Importance of Education."
 3. **Summarization**: Capable of summarizing long articles into short summaries.
@@ -184,6 +286,7 @@ You can use this summary as a quick reference for understanding how ChatGPT uses
 5. **Content Generation**: Can generate story continuations, creative writing prompts, and product descriptions.
 
 #### Strategies for Effective Transforming:
+
 - Be specific with your instructions and guidelines.
 - Consider the context and purpose for which you're asking the transformation.
 - Iteratively refine your prompts to get better results.
@@ -192,32 +295,35 @@ This page essentially lays out the power of transforming capabilities in ChatGPT
 
 Hope this helps you grasp the capabilities of ChatGPT's transforming feature! Let me know if you have any more questions or need further clarifications.
 
-  
-
 ## Expanding with ChatGPT
 
 #### Key Points:
+
 1. **What is Expanding?**: Expanding with ChatGPT refers to the process of adding more detail and context to an initial idea or question, aiming to provide comprehensive and informative answers.
 
-2. **Importance of Expanding**: 
-  - Enables in-depth exploration of concepts.
-  - Offers well-rounded, background-supported responses.
-  - Enhances user experience with informative and comprehensive replies.
+2. **Importance of Expanding**:
+
+- Enables in-depth exploration of concepts.
+- Offers well-rounded, background-supported responses.
+- Enhances user experience with informative and comprehensive replies.
 
 3. **Use Cases and Examples**:
-  - **Detailed Explanations**: ChatGPT can break down complex subjects into simpler terms.
-  - **Supporting Evidence**: Adds credibility by presenting facts, studies, or expert opinions.
-  - **Elaborating on Examples**: Gives more details and context around provided examples.
-  - **Historical Context**: Can offer background history for a better understanding of a topic.
 
-4. **Strategies for Effective Expansion**: 
-  - Be specific in your prompts.
-  - Align the context and purpose of the expansion.
-  - Use iterative refinement of prompts to obtain more accurate and detailed outputs.
+- **Detailed Explanations**: ChatGPT can break down complex subjects into simpler terms.
+- **Supporting Evidence**: Adds credibility by presenting facts, studies, or expert opinions.
+- **Elaborating on Examples**: Gives more details and context around provided examples.
+- **Historical Context**: Can offer background history for a better understanding of a topic.
+
+4. **Strategies for Effective Expansion**:
+
+- Be specific in your prompts.
+- Align the context and purpose of the expansion.
+- Use iterative refinement of prompts to obtain more accurate and detailed outputs.
 
 5. **Iterations for Refinement**:
-  - **Example 1**: Starts with a broad prompt like "Expand on the topic of dogs" and refines it to focus on specific traits and living conditions.
-  - **Example 2**: Further refines the prompt to request information on five popular dog breeds and their exercise routines.
+
+- **Example 1**: Starts with a broad prompt like "Expand on the topic of dogs" and refines it to focus on specific traits and living conditions.
+- **Example 2**: Further refines the prompt to request information on five popular dog breeds and their exercise routines.
 
 By using the expansion feature effectively, ChatGPT can offer richer and more detailed conversations, catering to a wide range of topics and user needs.
 
@@ -225,7 +331,7 @@ Keep this as a quick reference for effectively leveraging the 'expanding' capabi
 
 ## Formatting Output with ChatGPT
 
-  ### Summary: Formatting Output with ChatGPT
+### Summary: Formatting Output with ChatGPT
 
 **Key Topics:**
 
@@ -242,7 +348,7 @@ This guide discusses best practices for formatting and structuring output when w
 
 **Key Points:**
 
-1. **Format and Sequence Requirements**: Carefully analyze the input prompt to discern any specific format or sequence requirements. Align your output accordingly. 
+1. **Format and Sequence Requirements**: Carefully analyze the input prompt to discern any specific format or sequence requirements. Align your output accordingly.
 
 2. **Tabular Formats**: When a table is required, format the output into clearly separated columns and rows. This is especially useful for scientific data representation.
 
@@ -256,25 +362,29 @@ This guide discusses best practices for formatting and structuring output when w
 
 This guide helps you create outputs that are not only informative but also easy to read and well-structured, making the information more comprehensible.
 
-
 ## Best Practices for Prompting
 
 #### Key Points:
 
-1. **Detailed Description**: Offering specific details while prompting ChatGPT improves the accuracy and relevance of generated responses.  
-   - *Example*: Instead of "recommend a book," specify preferred genres or themes.
+1. **Detailed Description**: Offering specific details while prompting ChatGPT improves the accuracy and relevance of generated responses.
 
-2. **Contextual Understanding**: Providing context allows ChatGPT to generate responses that better align with the situation or topic.  
-   - *Example*: Don't just ask "What's the weather like?" Say, "I'm planning a beach outing; what's the weather like?"
+   - _Example_: Instead of "recommend a book," specify preferred genres or themes.
 
-3. **Incorporating Specific Examples**: Using concrete examples helps in getting more practical and tailored advice.  
-   - *Example*: Instead of asking for general programming advice, provide a specific code snippet.
+2. **Contextual Understanding**: Providing context allows ChatGPT to generate responses that better align with the situation or topic.
 
-4. **Rich Language & Sensory Details**: Descriptive language makes for more engaging and appropriate responses.  
-   - *Example*: Instead of asking for a simple recipe, provide specific tastes and cooking techniques you're interested in.
+   - _Example_: Don't just ask "What's the weather like?" Say, "I'm planning a beach outing; what's the weather like?"
 
-5. **Iterative Prompt Refinement**: Continuously tweaking and refining prompts can lead to more precise and desired outputs.  
-   - *Example*: Start with "Write a poem about love," and refine to "Write a poem about enduring love, inspired by a couple’s 50th anniversary."
+3. **Incorporating Specific Examples**: Using concrete examples helps in getting more practical and tailored advice.
+
+   - _Example_: Instead of asking for general programming advice, provide a specific code snippet.
+
+4. **Rich Language & Sensory Details**: Descriptive language makes for more engaging and appropriate responses.
+
+   - _Example_: Instead of asking for a simple recipe, provide specific tastes and cooking techniques you're interested in.
+
+5. **Iterative Prompt Refinement**: Continuously tweaking and refining prompts can lead to more precise and desired outputs.
+   - _Example_: Start with "Write a poem about love," and refine to "Write a poem about enduring love, inspired by a couple’s 50th anniversary."
 
 #### Takeaway:
+
 Effective prompting with ChatGPT involves multiple layers: detailed description, context, specific examples, rich language, and prompt refinement. These elements collectively enable better communication and more relevant outputs for various tasks.
