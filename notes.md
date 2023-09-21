@@ -17,6 +17,10 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 
 ## Table of Contents
 
+[ChatGPT Under The Hood](#chatgpt-under-the-hood)
+
+[ChatGPT Usage](#chatgpt-usage)
+
 [Basics of Prompting](#basics-of-prompting)
 
 [Iterative Refinement](#iterative-refinement)
@@ -90,43 +94,46 @@ Prompt formatting is a crucial aspect of interacting with language models effect
 - Guidelines for formatting prompts
 
 ## ChatGPT Under The Hood
-### ChatGPT: Under the Hood - Summary
 
 #### Overview
+
 - Focuses on the features, architecture, and training data of ChatGPT.
 - Developed by OpenAI for generating human-like text responses.
 
 #### ChatGPT Model
+
 - Built on GPT-3 architecture, uses autoregressive language modeling.
 - Contextualizes input text to generate appropriate text-based responses.
 
 #### Response Mechanism
+
 - Input is verified for safety and ethical guidelines.
 - Breaks down input into tokens, predicts the next word, and forms a full response.
 - Can be fine-tuned for domain-specific needs like language translation.
 
 #### Training Data
+
 - Trained on a diverse dataset including books, articles, and online forums.
 - Uses over 45 terabytes of text from various genres, languages, and time periods.
 
 #### Key Features
+
 - **Versatility**: Useful for multiple NLP tasks, can be fine-tuned.
 - **Accuracy**: High performance in several NLP benchmarks.
 - **Human-like Responses**: Ideal for chatbot development.
 - **Large Model Size**: Over 6 billion parameters, enhances context understanding.
 
 #### ChatGPT 3.5 vs. ChatGPT 4.0
+
 - **ChatGPT 3.5 Turbo**: Faster, more efficient, ideal for real-time responses.
 - **ChatGPT 4**: Better at long-form text, improved accuracy, and naturalness.
 
 #### Takeaways
+
 - Highly versatile and accurate, ideal for various NLP applications including chatbots.
 - Specific version choice should be based on project requirements.
 
 ---
-
-Feel free to refer back to these notes as you dive deeper into NLP or consider building a chatbot, Nick!1
-
 
 #### Instructions:
 
@@ -167,6 +174,40 @@ Feel free to refer back to these notes as you dive deeper into NLP or consider b
 - Iterate and refine prompts based on feedback.
 
 By carefully crafting your prompts, you'll get more accurate and contextually appropriate responses from ChatGPT.
+## ChatGPT Usage
+
+### ChatGPT Usage: Summary
+
+#### Key Sections
+- General Usage
+- Summarization
+- Text Extraction
+- Translation
+- Generating Structured Output
+- Creative Writing
+
+#### Major Points
+
+**1. General Usage:**  
+- ChatGPT is versatile, capable of tasks beyond chat interactions. Used for summarization, text extraction, translation, structured outputs, and creative writing.
+
+**2. Summarization:**  
+- Effective for condensing long texts into shorter summaries. Great for creating executive summaries, research paper abstracts, etc.
+
+**3. Text Extraction:**  
+- Automates the process of pulling out key info from unstructured text. Useful for data extraction and information retrieval.
+
+**4. Translation:**  
+- Capable of accurate language translation tasks, beneficial for multilingual chatbots and language learning.
+
+**5. Generating Structured Output:**  
+- Can produce responses adhering to specific formats/templates, helping in automating repetitive tasks and streamlining workflows.
+
+**6. Creative Writing:**  
+- Also used for generating creative text like stories and poetry, offering a creative companion for writers.
+
+#### Takeaways
+- ChatGPT is a multi-faceted tool not just limited to chatbot interactions. It has practical applications in various fields, making it a robust utility for tasks requiring human-level language understanding.
 
 ## Iterative Refinement
 
